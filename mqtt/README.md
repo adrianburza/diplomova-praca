@@ -49,15 +49,6 @@ Súbor `mosquitto.conf` zabezpečuje nasledovné:
 
 > ⚠️ **Dôležité:** Pre správne fungovanie tejto implementácie je potrebné, aby všetky súbory (certifikáty, heslá, ACL) boli uložené presne na tých cestách, ktoré sú definované v konfiguračnom súbore mosquitto.conf. Inak Mosquitto broker nebude schopný zabezpečiť šifrované spojenie ani vykonať správne overenie klienta.
 
-## Spustenie servera (Python)
-
-1. Uistite sa, že Mosquitto broker beží a akceptuje TLS pripojenie na porte `8883`
-2. Spustite skript:
-
-```bash
-python3 mqtt_to_sqlite.py
-```
-
 ## Vytvorenie databázy
 
 V rámci diplomovej práce bola databázová tabuľka vytvorená manuálne pomocou grafického nástroja DB Browser for SQLite. Alternatívne je možné tabuľku jednoducho vytvoriť pomocou nasledovného SQL príkazu:
@@ -72,7 +63,14 @@ CREATE TABLE merania (
 );
 ```
 
-> 💡 **Odporúčanie:** Pre záznam údajov a ladenie použite `mosquitto_sub` pre testovanie alebo `DB Browser for SQLite` na kontrolu obsahu databázy.
+## Spustenie serverovej časti (MQTT + Python)
+
+1. Uistite sa, že Mosquitto broker beží a akceptuje TLS pripojenie na porte `8883`
+2. Spustite skript:
+
+```bash
+python3 mqtt_to_sqlite.py
+```
 
 ## Bezpečnostné prvky
 
