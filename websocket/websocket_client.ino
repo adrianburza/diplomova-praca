@@ -3,8 +3,6 @@
 #include <DHT.h>
 #include <Wire.h>
 #include <Adafruit_VEML7700.h>
-#include <esp_system.h>
-#include <esp_heap_caps.h>
 
 using namespace websockets;
 
