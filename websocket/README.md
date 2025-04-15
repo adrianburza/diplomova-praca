@@ -73,7 +73,7 @@ Pre správnu funkčnosť HTTPS servera `server.py`, je potrebné, aby boli TLS c
 - `/etc/https/certs/server.crt` (verejný certifikát)
 - `/etc/https/private/server.key` (privátny kľúc)
 
-Tieto certifikáty slúžia na šifrovanie komunikácie medzi klientom a serverom.
+Na strane klienta (ESP32) je zároveň do kódu vložený **CA certifikát**, ktorý slúži na overenie dôveryhodnosti servera pred nadviazaním zabezpečeného spojenia.
 
 ## Bezpečnostné prvky
 
