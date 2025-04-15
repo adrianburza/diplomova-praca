@@ -47,6 +47,8 @@ Súbor `mosquitto.conf` zabezpečuje nasledovné:
 - Pravidlá prístupu pomocou ACL (`acl_file`)
 - Šifrovanie pomocou TLS certifikátov (CA, server cert, server key)
 
+> ⚠️ **Dôležité:** Pre správne fungovanie tejto implementácie je potrebné, aby všetky súbory (certifikáty, heslá, ACL) boli uložené presne na tých cestách, ktoré sú definované v konfiguračnom súbore mosquitto.conf. Inak Mosquitto broker nebude schopný zabezpečiť šifrované spojenie ani vykonať správne overenie klienta.
+
 ## Spustenie servera (Python)
 
 1. Uistite sa, že Mosquitto broker beží a akceptuje TLS pripojenie na porte `8883`
