@@ -18,10 +18,6 @@ Tento projekt demonštruje fungovanie WSN využívajúcej **HTTPS protokol so za
 - `DHT22` – meranie teploty a vlhkosti
 - `VEML7700` – meranie intenzity osvetlenia
 
-## Cieľ riešenia
-
-- Demonštrácia zabezpečeného prenosu údajov pomocou HTTPS
-
 ## Obsah repozitára
 
 - `https_client.ino` – bezpečne odosiela údaje zo senzorov z ESP32 na server.
