@@ -21,6 +21,9 @@
 
 - Hardvér: ESP32 D1 R32, Raspberry Pi 4, DHT22, VEML7700
 - Softvér: Arduino IDE, Python 3.x
+
+## Knižnice
+
 - **Pre ESP32:**
   - `WiFi.h` – pripojenie na Wi-Fi sieť
   - `HTTPClient.h` – HTTP komunikácia
