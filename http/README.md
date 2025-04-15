@@ -1,6 +1,6 @@
 # Diplomová práca – HTTP klient/server pre IoT bezdrôtovú senzorickú sieť (WSN)
 
-> ⚠️ Táto implementácia bola vytvorená ako súčasť diplomovej práce a slúžila na demonštráciu nezabezpečeného prenosu údajov v IoT prostredí. Umožnila identifikovať základné zraniteľnosti, otestovať možné útoky a poslúžila ako východiskový bod pre porovnanie s bezpečnými variantmi komunikácie.
+> ⚠️ Táto implementácia bola vytvorená v rámci diplomovej práce ako demonštračný príklad nezabezpečenej komunikácie v prostredí IoT. Slúžila na identifikáciu základných zraniteľností, testovanie možných útokov a poskytla východiskový rámec pre porovnanie s bezpečnými spôsobmi prenosu údajov.
 
 ## Architektúra systému
 
