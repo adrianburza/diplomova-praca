@@ -25,22 +25,25 @@ Táto implementácia demonštruje fungovanie WSN s využitím protokolu **WebSoc
 
 - Hardvér: ESP32 D1 R32, Raspberry Pi 4, DHT22, VEML7700
 - Softvér: Arduino IDE, Python 3.x
-- **Knižnice:**
-  - Pre ESP32:
-    - `WiFi.h`
-    - `ArduinoWebsockets.h`
-    - `DHT.h`
-    - `Wire.h`
-    - `Adafruit_VEML7700.h`
-  - Pre Raspberry Pi:
-    - `websockets`
-    - `ssl`
-    - `sqlite3`
-    - `json`
-    - `datetime`
-    - `asyncio`
-    - `logging`
-    - `time`
+
+## Knižnice
+
+- re ESP32:
+  - `WiFi.h` – pripojenie na Wi-Fi sieť
+  - `ArduinoWebsockets.h` – komunikácia cez WebSocket protokol
+  - `DHT.h` – čítanie údajov zo senzora DHT22
+  - `Wire.h` – I2C komunikácia pre senzor osvetlenia
+  - `Adafruit_VEML7700.h` – knižnica pre senzor intenzity osvetlenia VEML7700
+
+- Pre Raspberry Pi:
+  - `websockets` – WebSocket server pre príjem a odosielanie dát
+  - `ssl` – podpora TLS šifrovania komunikácie
+  - `sqlite3` – práca s lokálnou SQLite databázou
+  - `json` – spracovanie údajov vo formáte JSON
+  - `datetime` – generovanie časových pečiatok pre merania
+  - `asyncio` – asynchrónne spracovanie WebSocket spojení
+  - `logging` – výpis stavových hlásení do konzoly
+  - `time` – spracovanie časových operácií
 
 > 💡 **Odporúčanie:** Na Raspberry Pi je vhodné spustiť server v samostatnom virtuálnom prostredí (napr. pomocou `venv`), aby sa predišlo konfliktom medzi knižnicami.
 
