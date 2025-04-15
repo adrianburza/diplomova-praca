@@ -14,8 +14,8 @@
 
 ## Obsah repozitára
 
-- `http_client.ino` - kód pre ESP32. Zbiera údaje zo senzorov a odosiela ich cez HTTP POST ako JSON.
-- `server.py` - Flask server, ktorý prijíma JSON, zapisuje ho do `senzory.db` a zobrazuje výstup v konzole.
+- `http_client.ino` - kód pre ESP32, ktorý zbiera údaje zo senzorov a odosiela ich cez HTTP POST vo formáte JSON.
+- `server.py` - Flask server pre Raspberry Pi, ktorý prijíma JSON dáta, ukladá ich do databázy `senzory.db` a zobrazuje výstup v konzole.
 
 ## Požiadavky
 
