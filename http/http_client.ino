@@ -1,7 +1,6 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <DHT.h>
-#include <DHT_U.h>
 #include <Wire.h>
 #include <Adafruit_VEML7700.h>
 
