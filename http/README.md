@@ -1,7 +1,6 @@
-# Diplomová práca – HTTP klient/server pre IoT senzorickú sieť
+# Diplomová práca – HTTP klient/server pre IoT bezdrôtovú senzorickú sieť (WSN)
 
-Tento projekt demonštruje základné fungovanie jednoduchej senzorickej siete využívajúcej **HTTP protokol bez zabezpečenia**. 
-Slúži ako referenčný príklad, ktorý poukazuje na bezpečnostné riziká pri prenose údajov bez šifrovania a autentifikácie v IoT systémoch.
+Tento projekt demonštruje základné fungovanie WSN využívajúcej **HTTP protokol bez zabezpečenia**. 
 
 ## Architektúra systému
 
@@ -20,7 +19,7 @@ Slúži ako referenčný príklad, ktorý poukazuje na bezpečnostné riziká pr
 
 ## Obsah repozitára
 
-- `http_client.ino` - Kód pre ESP32. Zbiera údaje zo senzorov a odosiela ich cez HTTP POST ako JSON.
+- `http_client.ino` - kód pre ESP32. Zbiera údaje zo senzorov a odosiela ich cez HTTP POST ako JSON.
 - `server.py` - Flask server, ktorý prijíma JSON, zapisuje ho do `senzory.db` a zobrazuje výstup v konzole.
 
 ## Požiadavky
@@ -28,8 +27,10 @@ Slúži ako referenčný príklad, ktorý poukazuje na bezpečnostné riziká pr
 - Hardvér: ESP32, DHT22, VEML7700
 - Softvér: Arduino IDE, Python 3.x
 - Knižnice:
-  - Pre ESP32: `WiFi.h`, `HTTPClient.h`, `DHT.h`, `Adafruit_VEML7700`
+  - Pre ESP32: `WiFi.h`, `HTTPClient.h`, `DHT.h`, `Wire.h`, `Adafruit_VEML7700`
   - Pre Raspberry Pi: `Flask`, `sqlite3`
+ 
+> 💡 **Odporúčanie:** Na Raspberry Pi je vhodné spustiť server v samostatnom virtuálnom prostredí (napr. pomocou `venv`), aby sa predišlo konfliktom medzi knižnicami.
 
 ## Vytvorenie databázy
 
@@ -44,3 +45,11 @@ CREATE TABLE merania (
     intenzita_osvetlenia REAL,
     datum_merania TEXT
 );
+```
+
+## Spustenie servera
+
+Na spustenie serverovej časti stačí zadať nasledujúci príkaz do terminálu zariadenia (Raspberry Pi) s nainštalovaným Pythonom:
+
+```bash
+python3 server.py
