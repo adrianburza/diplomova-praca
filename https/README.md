@@ -27,7 +27,7 @@ Táto implementácia bola vytvorená ako súčasť diplomovej práce a predstavu
 
 - Hardvér: ESP32 D1 R32, Raspberry Pi 4, DHT22, VEML7700
 - Softvér: Arduino IDE, Python 3.x
-- 
+
 ## Knižnice
 - **Pre ESP32:**
   - `WiFi.h` – pripojenie na Wi-Fi sieť
@@ -73,6 +73,8 @@ Pre správnu funkčnosť HTTPS servera `server.py`, je potrebné, aby boli TLS c
 
 - `/etc/https/certs/server.crt` (verejný certifikát)
 - `/etc/https/private/server.key` (privátny kľúc)
+
+Na strane klienta (ESP32) je zároveň do kódu vložený **CA certifikát**, ktorý slúži na overenie dôveryhodnosti servera pred nadviazaním zabezpečeného spojenia.
 
 ## Bezpečnostné prvky
 
