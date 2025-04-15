@@ -79,6 +79,7 @@ Na strane klienta (ESP32) je zároveň do kódu vložený **CA certifikát**, kt
 ## Bezpečnostné prvky
 
 - Šifrovanie komunikácie cez TLS (HTTPS)
+- Overenie servera cez CA certifikát
 - Overovanie API kľúča v hlavičke `X-API-KEY`
 - Rate-limiting: max. 10 žiadostí za minútu na IP
 - Blokovanie IP po 5 chybných pokusoch o autentifikáciu na 5 minút
