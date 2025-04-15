@@ -27,9 +27,21 @@ Táto implementácia bola vytvorená ako súčasť diplomovej práce a predstavu
 
 - Hardvér: ESP32 D1 R32, Raspberry Pi 4, DHT22, VEML7700
 - Softvér: Arduino IDE, Python 3.x
-- Knižnice:
-  - Pre ESP32: `WiFi.h`, `WiFiClientSecure.h`, `HTTPClient.h`, `DHT.h`, `Wire.h`, `Adafruit_VEML7700`
-  - Pre Raspberry Pi: `Flask`, `flask_limiter`, `sqlite3`
+- 
+## Knižnice
+- **Pre ESP32:**
+  - `WiFi.h` – pripojenie na Wi-Fi sieť
+  - `WiFiClientSecure.h` – zabezpečená HTTPS komunikácia (TLS)
+  - `HTTPClient.h` – HTTP(S) klient na odosielanie požiadaviek
+  - `DHT.h` – čítanie údajov zo senzora DHT22
+  - `Wire.h` – I2C komunikácia pre senzor osvetlenia
+  - `Adafruit_VEML7700.h` – knižnica pre VEML7700 senzor intenzity osvetlenia
+
+- **Pre Raspberry Pi:**
+  - `Flask` – jednoduchý webový server v Pythone
+  - `flask_limiter` – obmedzovanie počtu požiadaviek (rate-limiting)
+  - `sqlite3` – databázový systém na ukladanie prijatých údajov
+
 
 > 💡 **Odporúčanie:** Na Raspberry Pi je vhodné spustiť server v samostatnom virtuálnom prostredí (napr. pomocou `venv`), aby sa predišlo konfliktom medzi knižnicami.
 
