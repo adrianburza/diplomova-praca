@@ -1,6 +1,7 @@
 # Diplomová práca – HTTP klient/server pre IoT bezdrôtovú senzorickú sieť (WSN)
 
-Tento projekt demonštruje základné fungovanie WSN využívajúcej **HTTP protokol bez zabezpečenia**. 
+Tento projekt demonštruje základné fungovanie WSN využívajúcej **HTTP protokol bez zabezpečenia**.  
+Cieľom riešenia je **demonštrovať prenos údajov bez šifrovania a autentifikácie**, a zároveň **poskytnúť východiskový bod pre porovnanie s bezpečnými variantmi komunikácie**.
 
 ## Architektúra systému
 
@@ -11,11 +12,6 @@ Tento projekt demonštruje základné fungovanie WSN využívajúcej **HTTP prot
 
 - `DHT22` – meranie teploty a vlhkosti
 - `VEML7700` – meranie intenzity osvetlenia
-
-## Cieľ riešenia
-
-- Demonštrovať prenos údajov bez šifrovania a autentifikácie
-- Poskytnúť východiskový bod pre porovnanie s bezpečnými variantmi komunikácie
 
 ## Obsah repozitára
 
