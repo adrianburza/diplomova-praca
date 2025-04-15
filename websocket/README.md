@@ -12,10 +12,6 @@ Táto implementácia demonštruje fungovanie WSN s využitím protokolu **WebSoc
 - `DHT22` – meranie teploty a vlhkosti
 - `VEML7700` – meranie intenzity osvetlenia
 
-## Cieľ riešenia
-
-- Demonštrácia bezpečnej komunikácie cez WebSocket s šifrovaním a overovaním tokenu
-
 ## Obsah repozitára
 
 - `websocket_client.ino` – kód pre ESP32, ktorý zbiera dáta zo senzorov a odosiela ich cez WebSocket (wss) ako JSON, vrátane TLS a JWT autentifikácie.
