@@ -21,9 +21,17 @@
 
 - Hardvér: ESP32 D1 R32, Raspberry Pi 4, DHT22, VEML7700
 - Softvér: Arduino IDE, Python 3.x
-- Knižnice:
-  - Pre ESP32: `WiFi.h`, `HTTPClient.h`, `DHT.h`, `Wire.h`, `Adafruit_VEML7700`
-  - Pre Raspberry Pi: `Flask`, `sqlite3`
+- **Pre ESP32:**
+  - `WiFi.h` – pripojenie na Wi-Fi sieť
+  - `HTTPClient.h` – HTTP komunikácia
+  - `DHT.h` – senzor teploty a vlhkosti DHT22
+  - `Wire.h` – I2C komunikácia
+  - `Adafruit_VEML7700.h` – senzor intenzity osvetlenia VEML7700
+
+- **Pre Raspberry Pi:**
+  - `Flask` – webový framework pre spracovanie HTTP požiadaviek
+  - `sqlite3` – databáza na ukladanie údajov
+  - `datetime` – modul na prácu s dátumom a časom
  
 > 💡 **Odporúčanie:** Na Raspberry Pi je vhodné spustiť server v samostatnom virtuálnom prostredí (napr. pomocou `venv`), aby sa predišlo konfliktom medzi knižnicami.
 
