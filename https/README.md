@@ -55,6 +55,8 @@ Na spustenie serverovej časti stačí zadať nasledujúci príkaz do terminálu
 python3 server.py
 ```
 
+### TLS certifikáty
+
 Pre správnu funkčnosť HTTPS servera `server.py`, je potrebné, aby boli TLS certifikáty uložené na definovaných systémových cestách. Skript očakáva:
 
 - `/etc/https/certs/server.crt` (verejný certifikát)
