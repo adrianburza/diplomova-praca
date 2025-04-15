@@ -12,10 +12,6 @@ Táto implementácia bola vytvorená ako súčasť diplomovej práce a demonštr
 - `DHT22` – meranie teploty a vlhkosti
 - `VEML7700` – meranie intenzity osvetlenia
 
-## Cieľ riešenia
-
-- Ukázať využitie MQTT protokolu pre šifrovaný a autentifikovaný prenos senzorických údajov
-
 ## Obsah repozitára
 
 - `mqtt_client.ino` – kód pre ESP32, ktorý odosiela údaje zo senzorov na MQTT broker cez TLS
@@ -60,16 +56,9 @@ Súbor `mosquitto.conf` zabezpečuje nasledovné:
 python3 mqtt_to_sqlite.py
 ```
 
-## Bezpečnostné prvky
-
-- Šifrovanie pomocou TLS (MQTT cez port 8883)
-- Overenie klienta pomocou mena a hesla
-- Overenie servera pomocou **CA certifikátu** uloženého na strane ESP32 a Python klienta
-- Validácia JSON údajov pred ich uložením
-
 ## Vytvorenie databázy
 
-SQLite tabuľka sa vytvorí pomocou:
+V rámci diplomovej práce bola databázová tabuľka vytvorená manuálne pomocou grafického nástroja DB Browser for SQLite. Alternatívne je možné tabuľku jednoducho vytvoriť pomocou nasledovného SQL príkazu:
 
 ```sql
 CREATE TABLE merania (
@@ -82,3 +71,10 @@ CREATE TABLE merania (
 ```
 
 > 💡 **Odporúčanie:** Pre záznam údajov a ladenie použite `mosquitto_sub` pre testovanie alebo `DB Browser for SQLite` na kontrolu obsahu databázy.
+
+## Bezpečnostné prvky
+
+- Šifrovanie pomocou TLS (MQTT cez port 8883)
+- Overenie klienta pomocou mena a hesla
+- Overenie servera pomocou **CA certifikátu** uloženého na strane ESP32 a Python klienta
+- Validácia JSON údajov pred ich uložením
