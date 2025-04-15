@@ -25,7 +25,7 @@ Táto implementácia bola vytvorená ako súčasť diplomovej práce a predstavu
 
 ## Požiadavky
 
-- Hardvér: ESP32, DHT22, VEML7700
+- Hardvér: ESP32 D1 R32, Raspberry Pi 4, DHT22, VEML7700
 - Softvér: Arduino IDE, Python 3.x
 - Knižnice:
   - Pre ESP32: `WiFi.h`, `WiFiClientSecure.h`, `HTTPClient.h`, `DHT.h`, `Wire.h`, `Adafruit_VEML7700`
