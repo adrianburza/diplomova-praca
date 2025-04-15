@@ -1,6 +1,6 @@
 # Diplomová práca – HTTPS klient/server pre IoT bezdrôtovú senzorickú sieť (WSN)
 
-Tento projekt demonštruje fungovanie WSN využívajúcej **HTTPS protokol so zabezpečením pomocou TLS a API kľúča**.
+Táto implementácia bola vytvorená ako súčasť diplomovej práce a predstavuje bezpečný model komunikácie v rámci bezdrôtovej senzorickej siete (WSN) s využitím **HTTPS protokolu**. Komunikácia medzi zariadeniami je **zabezpečená pomocou TLS šifrovania a API kľúča**.
 
 ## Architektúra systému
 
@@ -20,7 +20,7 @@ Tento projekt demonštruje fungovanie WSN využívajúcej **HTTPS protokol so za
 
 ## Obsah repozitára
 
-- `https_client.ino` – bezpečne odosiela údaje zo senzorov z ESP32 na server.
+- `https_client.ino` – kód pre ESP32, ktorý bezpečne odosiela údaje zo senzorov na server.
 - `server.py` – bezpečne prijíma, overuje a ukladá údaje na strane Raspberry Pi.
 
 ## Požiadavky
